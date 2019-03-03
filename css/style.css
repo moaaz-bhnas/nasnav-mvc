@@ -1,0 +1,79 @@
+.container {
+  padding: 0 .5rem;
+  max-width: 62rem;
+  margin: 0 auto; }
+
+.body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0; }
+
+.callToActionButton {
+  font-weight: 700;
+  color: transparent;
+  padding: .8rem 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer; }
+
+.callToActionButton_color_white {
+  color: #fff; }
+
+.callToActionButton_color_violet {
+  color: #8249F0; }
+
+.callToActionButton_color_blue {
+  color: #119DEA; }
+
+.desktopNavbar {
+  display: inline-block; }
+
+.header {
+  background-image: linear-gradient(to top right, #8249F0, #119DEA); }
+
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+.logo {
+  line-height: 5rem;
+  color: #fff;
+  margin: 0; }
+
+.logoAndNavbarContainer {
+  text-align: center;
+  height: 5rem; }
+
+.desktopNavbar__title {
+  position: absolute;
+  left: -100rem; }
+
+.desktopNavMenu__item {
+  display: inline-block; }
+
+.desktopNavMenu__link {
+  display: block;
+  line-height: 5rem;
+  color: #fff;
+  text-decoration: none;
+  padding: 0 1.2rem;
+  position: relative; }
+  .desktopNavMenu__link::before {
+    content: '';
+    width: 1.4rem;
+    height: .2rem;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: .2s background-color; }
+  .desktopNavMenu__link:hover::before, .desktopNavMenu__link:focus::before {
+    background-color: #fff; }
+
+.logoAndNavbarContainer__callToActionButton {
+  margin-top: 1.23rem;
+  float: right; }
+
+.logoAndNavbarContainer__logo {
+  float: left; }

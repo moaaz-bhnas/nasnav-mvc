@@ -1,0 +1,24 @@
+@import '../../sass-modules/_colors';
+
+.callToActionButton {
+  font-weight: 700;
+  color: transparent;
+
+  padding: .8rem 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+}
+
+// Modifiers
+.callToActionButton_color_white {
+  color: #fff;
+}
+.callToActionButton_color_violet {
+  color: $violet;
+}
+.callToActionButton_color_blue {
+  color: $blue;
+}

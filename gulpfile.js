@@ -13,18 +13,12 @@ gulp.task('sass', function () {
   return gulp.src('./blocks/**/*.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(concat('style.css'))
-    .pipe(gulp.dest('./'));
+    .pipe(gulp.dest('./css'));
 });
  
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/**/*.scss', ['sass']);
 });
-
-// gulp.task('css', function() {
-//   return gulp.src('./blocks/**/*.scss')
-//     .pipe(concat('styles.scss'))
-//     .pipe(gulp.dest('./'));
-// });
 
 // Gulp watch syntax
 gulp.task('watch', function(){
