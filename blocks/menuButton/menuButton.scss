@@ -1,0 +1,17 @@
+@import '../../sass-modules/breakpoints';
+
+.menuButton {
+  display: inline-block;
+
+  width: 3rem;
+  padding: .7rem;
+  background-color: transparent;
+  border: none;
+  margin-top: .9rem;
+
+  cursor: pointer;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: none;
+  }
+}
