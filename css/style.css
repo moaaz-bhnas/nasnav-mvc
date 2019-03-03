@@ -24,7 +24,7 @@
 
 .container {
   padding: 0 .5rem;
-  max-width: 62rem;
+  max-width: 65rem;
   margin: 0 auto; }
 
 .desktopNavbar {
@@ -33,11 +33,23 @@
     .desktopNavbar {
       display: inline-block; } }
 
+.flowText {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 300; }
+
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA); }
 
 .image {
   max-width: 100%; }
+
+.intro {
+  display: inline-block;
+  width: 50%; }
+
+.laptop {
+  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
 
 .list {
   list-style: none;
@@ -65,6 +77,10 @@
   @media screen and (min-width: 55.5rem) {
     .menuButton {
       display: none; } }
+
+.serviceDescription {
+  color: #fff;
+  line-height: 1.5; }
 
 .sidebar {
   text-align: left;
@@ -113,9 +129,31 @@
     top: 0;
     left: 50%;
     transform: translateX(-50%);
-    transition: .2s background-color; }
+    transition: .2s background-color, .2s box-shadow; }
   .desktopNavMenu__link:hover::before, .desktopNavMenu__link:focus::before {
-    background-color: #fff; }
+    background-color: #fff;
+    box-shadow: 0 0 10px #fff; }
+
+.header__intro {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+  margin-right: -.4rem; }
+
+.header__laptop {
+  display: inline-block;
+  vertical-align: top;
+  width: 45%;
+  margin-left: 5%; }
+
+.header__logoAndNavbarContainer {
+  margin-bottom: 3rem; }
+
+.intro__flowText {
+  margin: 0; }
+
+.intro__serviceDescription {
+  margin: 2rem 0; }
 
 .logoAndNavbarContainer__callToActionButton {
   margin-top: 1.23rem;
