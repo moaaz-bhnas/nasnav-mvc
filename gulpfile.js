@@ -5,12 +5,11 @@ sass.compiler = require('node-sass');
 const babel = require('gulp-babel');
  
 gulp.task('scripts', function() {
-  return gulp.src('./blocks/**/*.js')
-    .pipe(concat('all.js'))
+  return gulp.src('./es6/code.js')
     .pipe(babel({
       presets: ['@babel/env']
     }))
-    .pipe(gulp.dest('./js'));
+    .pipe(gulp.dest('./es5'));
 });
 
 gulp.task('sass', function () {
@@ -19,14 +18,10 @@ gulp.task('sass', function () {
     .pipe(concat('style.css'))
     .pipe(gulp.dest('./css'));
 });
- 
-gulp.task('js:watch', function () {
-  gulp.watch('./blocks/**/*.js', gulp.series('scripts'));
-});
 
 // Gulp watch syntax
 gulp.task('watch', function(){
-    gulp.watch('./blocks/**/*.scss', gulp.series('sass')),
-    gulp.watch('./blocks/**/*.js', gulp.series('scripts'));
-    // Other watchers
-  })
+  gulp.watch('./blocks/**/*.scss', gulp.series('sass')),
+  gulp.watch('./es6/code.js', gulp.series('scripts'));
+  // Other watchers
+});
