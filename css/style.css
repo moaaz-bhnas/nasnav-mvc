@@ -26,7 +26,10 @@
   color: #119DEA; }
 
 .desktopNavbar {
-  display: inline-block; }
+  display: none; }
+  @media screen and (min-width: 55.5rem) {
+    .desktopNavbar {
+      display: inline-block; } }
 
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA); }
@@ -73,7 +76,14 @@
 
 .logoAndNavbarContainer__callToActionButton {
   margin-top: 1.23rem;
-  float: right; }
+  display: none; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__callToActionButton {
+      display: block;
+      float: right; } }
 
 .logoAndNavbarContainer__logo {
-  float: left; }
+  display: inline-block; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__logo {
+      float: left; } }

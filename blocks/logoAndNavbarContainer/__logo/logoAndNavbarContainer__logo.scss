@@ -1,3 +1,9 @@
+@import '../../../sass-modules/breakpoints';
+
 .logoAndNavbarContainer__logo {
-  float: left;
+  display: inline-block;
+
+  @media screen and (min-width: $break-sidenav) {
+    float: left;
+  }
 }
