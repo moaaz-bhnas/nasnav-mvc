@@ -14,11 +14,13 @@
 
 // Modifiers
 .callToActionButton_color_white {
-  color: #fff;
-}
-.callToActionButton_color_violet {
-  color: $violet;
-}
-.callToActionButton_color_blue {
   color: $blue;
+  background-color: #fff;
+}
+// .callToActionButton_color_violet {
+//   color: $violet;
+// }
+.callToActionButton_color_blue {
+  color: #fff;
+  background-color: $blue;
 }

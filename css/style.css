@@ -12,13 +12,12 @@
   cursor: pointer; }
 
 .callToActionButton_color_white {
-  color: #fff; }
-
-.callToActionButton_color_violet {
-  color: #8249F0; }
+  color: #119DEA;
+  background-color: #fff; }
 
 .callToActionButton_color_blue {
-  color: #119DEA; }
+  color: #fff;
+  background-color: #119DEA; }
 
 .container {
   padding: 0 .5rem;
@@ -62,6 +61,24 @@
   @media screen and (min-width: 55.5rem) {
     .menuButton {
       display: none; } }
+
+.sidebar {
+  text-align: left;
+  width: 18.75rem;
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1; }
+
+.sidebarOverlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .desktopNavbar__title {
   position: absolute;
@@ -111,5 +128,13 @@
   left: -100rem; }
 
 .mobileNavMenu__link {
+  display: block;
   text-decoration: none;
-  color: #2E3E4F; }
+  color: #2E3E4F;
+  padding: 1rem 0 1rem 3rem;
+  transition: .2s background-color; }
+  .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
+    background-color: #d3e9fb; }
+
+.sidebar__callToActionButton {
+  margin: 1rem 0 0 1.6rem; }
