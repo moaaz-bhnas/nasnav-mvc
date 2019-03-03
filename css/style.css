@@ -1,7 +1,9 @@
-.container {
-  padding: 0 .5rem;
-  max-width: 62rem;
-  margin: 0 auto; }
+.body {
+  font-family: 'Work Sans', sans-serif;
+  margin: 0; }
+
+.body[data-noscroll="true"] {
+  overflow: hidden; }
 
 .callToActionButton {
   font-weight: 700;
@@ -20,18 +22,16 @@
   color: #fff;
   background-color: #119DEA; }
 
+.container {
+  padding: 0 .5rem;
+  max-width: 62rem;
+  margin: 0 auto; }
+
 .desktopNavbar {
   display: none; }
   @media screen and (min-width: 55.5rem) {
     .desktopNavbar {
       display: inline-block; } }
-
-.body {
-  font-family: 'Work Sans', sans-serif;
-  margin: 0; }
-
-.body[data-noscroll="true"] {
-  overflow: hidden; }
 
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA); }
@@ -67,7 +67,6 @@
       display: none; } }
 
 .sidebar {
-  display: none;
   text-align: left;
   width: 18.75rem;
   background-color: #fff;
@@ -75,9 +74,11 @@
   top: 0;
   left: 0;
   bottom: 0;
-  z-index: 1; }
+  z-index: 1;
+  transform: translateX(-100%);
+  transition: .3s transform; }
   .menuButton[aria-pressed="true"] ~ .sidebar {
-    display: block; }
+    transform: translateX(0); }
 
 .sidebarOverlay {
   display: none;
@@ -89,6 +90,10 @@
   background-color: rgba(0, 0, 0, 0.5); }
   .menuButton[aria-pressed="true"] ~ .sidebarOverlay {
     display: block; }
+
+.desktopNavbar__title {
+  position: absolute;
+  left: -100rem; }
 
 .desktopNavMenu__item {
   display: inline-block; }
@@ -112,10 +117,6 @@
   .desktopNavMenu__link:hover::before, .desktopNavMenu__link:focus::before {
     background-color: #fff; }
 
-.desktopNavbar__title {
-  position: absolute;
-  left: -100rem; }
-
 .logoAndNavbarContainer__callToActionButton {
   margin-top: 1.23rem;
   display: none; }
@@ -130,6 +131,10 @@
     .logoAndNavbarContainer__logo {
       float: left; } }
 
+.logoAndNavbarContainer__menuButton {
+  position: absolute;
+  left: 0; }
+
 .mobileNavbar__title {
   position: absolute;
   left: -100rem; }
@@ -142,10 +147,6 @@
   transition: .2s background-color; }
   .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
     background-color: #d3e9fb; }
-
-.logoAndNavbarContainer__menuButton {
-  position: absolute;
-  left: 0; }
 
 .sidebar__callToActionButton {
   margin: 1rem 0 0 1.6rem; }

@@ -1,6 +1,4 @@
 .sidebar {
-  display: none;
-
   text-align: left;
 
   width: 18.75rem;
@@ -12,7 +10,10 @@
   bottom: 0;
   z-index: 1;
 
+  transform: translateX(-100%);
+  transition: .3s transform;
+
   .menuButton[aria-pressed="true"] ~ & {
-    display: block;
+    transform: translateX(0);
   }
 }
