@@ -9,17 +9,17 @@
   <link rel="stylesheet" href="css/style.css">
   <title>Nasnav</title>
 </head>
-<body class="body">
+<body class="body" data-noscroll="false">
   <header class="header" role="banner">
     <div class="container">
       <div class="logoAndNavbarContainer">
         <h1 class="logo logoAndNavbarContainer__logo">Nasnav</h1>
 
-        <button class="menuButton logoAndNavbarContainer__menuButton">
+        <button class="menuButton logoAndNavbarContainer__menuButton" aria-pressed="false" aria-expanded="false" aria-controls="sidebar">
           <img class="image" src="image/menu-button.svg" alt="Menu Icon">
         </button>
 
-        <div class="sidebar">
+        <div class="sidebar" id="sidebar">
           <nav class="mobileNavbar" role="navigation">
             <h2 class="mobileNavbar__title">Mobile Navigation Bar</h2>
             <ul class="list mobileNavMenu">

@@ -1,4 +1,6 @@
 .sidebarOverlay {
+  display: none;
+
   position: fixed;
   top: 0;
   right: 0;
@@ -6,4 +8,8 @@
   left: 0;
 
   background-color: rgba($color: #000, $alpha: .5);
+
+  .menuButton[aria-pressed="true"] ~ & {
+    display: block;
+  }
 }

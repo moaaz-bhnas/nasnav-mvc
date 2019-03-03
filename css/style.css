@@ -2,6 +2,20 @@
   font-family: 'Work Sans', sans-serif;
   margin: 0; }
 
+.body[data-noscroll="true"] {
+  overflow: hidden; }
+
+.container {
+  padding: 0 .5rem;
+  max-width: 62rem;
+  margin: 0 auto; }
+
+.desktopNavbar {
+  display: none; }
+  @media screen and (min-width: 55.5rem) {
+    .desktopNavbar {
+      display: inline-block; } }
+
 .callToActionButton {
   font-weight: 700;
   color: transparent;
@@ -19,32 +33,16 @@
   color: #fff;
   background-color: #119DEA; }
 
-.container {
-  padding: 0 .5rem;
-  max-width: 62rem;
-  margin: 0 auto; }
-
-.desktopNavbar {
-  display: none; }
-  @media screen and (min-width: 55.5rem) {
-    .desktopNavbar {
-      display: inline-block; } }
-
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA); }
-
-.image {
-  max-width: 100%; }
 
 .list {
   list-style: none;
   padding-left: 0;
   margin: 0; }
 
-.logo {
-  line-height: 5rem;
-  color: #fff;
-  margin: 0; }
+.image {
+  max-width: 100%; }
 
 .logoAndNavbarContainer {
   text-align: center;
@@ -62,7 +60,13 @@
     .menuButton {
       display: none; } }
 
+.logo {
+  line-height: 5rem;
+  color: #fff;
+  margin: 0; }
+
 .sidebar {
+  display: none;
   text-align: left;
   width: 18.75rem;
   background-color: #fff;
@@ -71,14 +75,19 @@
   left: 0;
   bottom: 0;
   z-index: 1; }
+  .menuButton[aria-pressed="true"] ~ .sidebar {
+    display: block; }
 
 .sidebarOverlay {
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.5); }
+  .menuButton[aria-pressed="true"] ~ .sidebarOverlay {
+    display: block; }
 
 .desktopNavbar__title {
   position: absolute;
