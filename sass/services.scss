@@ -1,5 +1,4 @@
 @import 'modules/colors';
-@import 'modules/font-sizes';
 @import 'modules/breakpoints';
 
 /* =======================================
@@ -32,14 +31,10 @@ Services
 }
 
 /* =======================================
-First Paragraph
+First Paragraph (Jumbotron)
 ========================================== */
-.servicesPara1 {
+.services__jumbotron {
   text-align: center;
-  font-size: $body-text-med;
-}
-
-.services__servicesPara1 {
   margin: 0;
 }
 
@@ -144,10 +139,6 @@ Service
 /* =======================================
 Service Description
 ========================================== */
-.serviceDescription {
-  font-size: $body-text-med;
-}
-
-.service__serviceDescription {
+.service__jumbotron {
   margin: .5rem 0 1.5rem;
 }

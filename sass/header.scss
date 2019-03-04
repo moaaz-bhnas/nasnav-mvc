@@ -1,6 +1,5 @@
 @import 'modules/breakpoints';
 @import 'modules/colors';
-@import 'modules/font-sizes';
 
 /* ===================================== 
 Header 
@@ -231,15 +230,9 @@ Intro
 }
 
 /* ===================================== 
-Intro first paragraph
+Jumbotron
 ===================================== */
-.introPara1 {
-  color: #fff;
-  font-size: 2.7rem;
-  font-weight: 300;
-}
-
-.intro__introPara1 {
+.intro__jumbotron {
   margin: 0;
 }
 

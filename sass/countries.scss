@@ -1,0 +1,23 @@
+@import 'modules/colors';
+
+/* =============================
+Countries
+================================ */
+.countries {
+  text-align: center;
+  background-color: $lighter-grey;
+  padding: 2rem 0;
+}
+
+/* --- title --- */
+.countries__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* =============================
+Jumbotron
+================================ */
+.countries__jumbotron {
+  margin: 0;
+}

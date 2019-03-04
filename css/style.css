@@ -6,6 +6,25 @@
 .body[data-noscroll="true"] {
   overflow: hidden; }
 
+/* =============================
+Countries
+================================ */
+.countries {
+  text-align: center;
+  background-color: #F5F9F9;
+  padding: 2rem 0; }
+
+/* --- title --- */
+.countries__title {
+  position: absolute;
+  left: -100rem; }
+
+/* =============================
+Jumbotron
+================================ */
+.countries__jumbotron {
+  margin: 0; }
+
 /* ===================================== 
 Header 
 ===================================== */
@@ -173,14 +192,9 @@ Intro
       margin-right: -.4rem; } }
 
 /* ===================================== 
-Intro first paragraph
+Jumbotron
 ===================================== */
-.introPara1 {
-  color: #fff;
-  font-size: 2.7rem;
-  font-weight: 300; }
-
-.intro__introPara1 {
+.intro__jumbotron {
   margin: 0; }
 
 /* ===================================== 
@@ -235,13 +249,10 @@ Services
   left: -100rem; }
 
 /* =======================================
-First Paragraph
+First Paragraph (Jumbotron)
 ========================================== */
-.servicesPara1 {
+.services__jumbotron {
   text-align: center;
-  font-size: 2rem; }
-
-.services__servicesPara1 {
   margin: 0; }
 
 /* =======================================
@@ -316,10 +327,7 @@ Service
 /* =======================================
 Service Description
 ========================================== */
-.serviceDescription {
-  font-size: 2rem; }
-
-.service__serviceDescription {
+.service__jumbotron {
   margin: .5rem 0 1.5rem; }
 
 /* ===================================== 
@@ -341,6 +349,21 @@ Body Text
 
 .bodyText_color_grey {
   color: #6F8196; }
+
+/* =====================================
+Jumbo
+======================================== */
+.jumbotron_size_med {
+  font-size: 2rem; }
+
+.jumbotron_size_large {
+  font-size: 2.8rem; }
+
+.jumbotron_color_white {
+  color: #fff; }
+
+.jumbotron_weight_light {
+  font-weight: 300; }
 
 /* ===================================== 
 Call-to-action buttons 
@@ -404,11 +427,8 @@ Statistics
 /* ===============================
 First Paragraph
 ================================== */
-.statisticsPara1 {
-  font-size: 2rem;
-  max-width: 35rem; }
-
-.statistics__statisticsPara1 {
+.statistics__jumbotron {
+  max-width: 35rem;
   margin: 0 auto; }
 
 /* ===============================

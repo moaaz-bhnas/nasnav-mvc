@@ -1,5 +1,4 @@
 @import 'modules/colors';
-@import 'modules/font-sizes';
 @import 'modules/breakpoints';
 
 /* ===============================
@@ -24,12 +23,8 @@ Statistics
 /* ===============================
 First Paragraph
 ================================== */
-.statisticsPara1 {
-  font-size: $body-text-med;
+.statistics__jumbotron {
   max-width: 35rem;
-}
-
-.statistics__statisticsPara1 {
   margin: 0 auto;
 }
 

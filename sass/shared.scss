@@ -25,6 +25,23 @@ Body Text
   color: $light-grey;
 }
 
+/* =====================================
+Jumbo
+======================================== */
+// modifiers
+.jumbotron_size_med {
+  font-size: 2rem;
+}
+.jumbotron_size_large {
+  font-size: 2.8rem;
+}
+.jumbotron_color_white {
+  color: #fff;
+}
+.jumbotron_weight_light {
+  font-weight: 300;
+}
+
 /* ===================================== 
 Call-to-action buttons 
 ===================================== */
