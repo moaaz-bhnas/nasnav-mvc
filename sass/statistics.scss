@@ -1,5 +1,6 @@
 @import 'modules/colors';
 @import 'modules/font-sizes';
+@import 'modules/breakpoints';
 
 /* ===============================
 Statistics
@@ -8,6 +9,10 @@ Statistics
   text-align: center;
   padding: 6rem 0;
   background-color: $lighter-grey;
+
+  position: relative;
+
+  overflow: hidden;
 }
 
 /* --- title --- */
@@ -44,4 +49,38 @@ Image
 ================================== */
 .statisticsImage {
   width: 33rem;
+}
+
+/* ===============================
+Phone
+================================== */
+.phone {
+  display: none;
+  width: 20rem;
+  position: absolute;
+  top: 3rem;
+  left: -5rem;
+
+  transform: rotate(-20deg);
+
+  @media screen and (min-width: $break-large) {
+    display: block;
+  }
+}
+
+/* ===============================
+Tablet
+================================== */
+.tablet {
+  display: none;
+  width: 20rem;
+  position: absolute;
+  top: 3rem;
+  right: -8rem;
+
+  transform: rotate(-20deg);
+
+  @media screen and (min-width: $break-large) {
+    display: block;
+  }
 }
