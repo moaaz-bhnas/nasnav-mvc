@@ -1,0 +1,10 @@
+.serviceList__item {
+  clear: both;
+  margin-bottom: 4rem;
+}
+
+.serviceList__item::after {
+  content: "";
+  display: block;
+  clear: both;
+}

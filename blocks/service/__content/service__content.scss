@@ -1,28 +1,23 @@
 @import '../../../sass-modules/breakpoints';
 
-.service__image {
-  display: block;
-  width: 27rem;
-
-  margin: 0 auto 1rem;
-
+.service__content {
   @media screen and (min-width: $break-sidenav) {
-    width: 50%;
+    width: 45%;
   }
 }
 
 .serviceList__item:not(:nth-child(2)) {
-  .service__image {
+  .service__content {
     @media screen and (min-width: $break-sidenav) {
-      float: right;
+      float: left;
     }
   }
 }
 
 .serviceList__item:nth-child(2) {
-  .service__image {
+  .service__content {
     @media screen and (min-width: $break-sidenav) {
-      float: left;
+      float: right;
     }
   }
 }
