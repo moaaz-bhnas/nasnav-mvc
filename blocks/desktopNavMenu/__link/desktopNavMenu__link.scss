@@ -1,3 +1,5 @@
+@import '../../../sass-modules/breakpoints';
+
 .desktopNavMenu__link {
   display: block;
 
@@ -8,6 +10,10 @@
   padding: 0 1.2rem;
 
   position: relative;
+
+  @media screen and (min-width: $break-large) {
+    padding: 0 1.6rem;
+  }
 
   &::before {
     content: '';

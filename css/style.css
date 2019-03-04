@@ -1,3 +1,12 @@
+.bodyText {
+  line-height: 1.5;
+  color: #6F8196; }
+
+.container {
+  padding: 0 1.5rem;
+  max-width: 65rem;
+  margin: 0 auto; }
+
 .body {
   color: #2E3E4F;
   font-family: 'Work Sans', sans-serif;
@@ -6,26 +15,11 @@
 .body[data-noscroll="true"] {
   overflow: hidden; }
 
-.bodyText {
-  line-height: 1.5; }
-
-.container {
-  padding: 0 1.5rem;
-  max-width: 62rem;
-  margin: 0 auto; }
-
 .desktopNavbar {
   display: none; }
   @media screen and (min-width: 55.5rem) {
     .desktopNavbar {
       display: inline-block; } }
-
-.header {
-  background-image: linear-gradient(to top right, #8249F0, #119DEA);
-  overflow: hidden; }
-
-.image {
-  max-width: 100%; }
 
 .callToActionButton {
   font-weight: 700;
@@ -44,22 +38,21 @@
   color: #fff;
   background-color: #119DEA; }
 
+.header {
+  background-image: linear-gradient(to top right, #8249F0, #119DEA);
+  overflow: hidden; }
+
+
 .introPara1 {
   color: #fff;
   font-size: 2.7rem;
   font-weight: 300; }
 
-.laptop {
-  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0; }
-
-
 .introPara2 {
   color: #fff; }
+
+.image {
+  max-width: 100%; }
 
 .logo {
   line-height: 5rem;
@@ -83,21 +76,39 @@
     .menuButton {
       display: none; } }
 
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }
+
+.laptop {
+  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
+
 .serviceDescription {
-  font-size: 2.6rem;
-  font-weight: 300; }
+  font-size: 2rem; }
 
 
 .services {
   padding: 4rem 0; }
 
+.servicesPara2 {
+  font-size: 1.05rem;
+  text-align: center; }
+
+.sidebarOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5); }
+  .menuButton[aria-pressed="true"] ~ .sidebarOverlay {
+    display: block; }
+
 .servicesPara1 {
   text-align: center;
-  font-size: 2.6rem;
-  font-weight: 300; }
-
-.servicesPara2 {
-  text-align: center; }
+  font-size: 2rem; }
 
 .sidebar {
   text-align: left;
@@ -113,32 +124,12 @@
   .menuButton[aria-pressed="true"] ~ .sidebar {
     transform: translateX(0); }
 
-.sidebarOverlay {
-  display: none;
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5); }
-  .menuButton[aria-pressed="true"] ~ .sidebarOverlay {
-    display: block; }
-
 .desktopNavbar__title {
   position: absolute;
   left: -100rem; }
 
 .desktopNavMenu__item {
   display: inline-block; }
-
-.header__intro {
-  margin-bottom: 2rem; }
-  @media screen and (min-width: 55.5rem) {
-    .header__intro {
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-      margin-right: -.4rem; } }
 
 .desktopNavMenu__link {
   display: block;
@@ -147,6 +138,9 @@
   text-decoration: none;
   padding: 0 1.2rem;
   position: relative; }
+  @media screen and (min-width: 65rem) {
+    .desktopNavMenu__link {
+      padding: 0 1.6rem; } }
   .desktopNavMenu__link::before {
     content: '';
     width: 1.4rem;
@@ -171,28 +165,23 @@
       width: 45%;
       margin-left: 5%; } }
 
+.header__logoAndNavbarContainer {
+  margin-bottom: 3rem; }
+
+.header__intro {
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 55.5rem) {
+    .header__intro {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      margin-right: -.4rem; } }
+
 .intro__introPara2 {
   margin: 2rem 0; }
 
 .intro__introPara1 {
   margin: 0; }
-
-.logoAndNavbarContainer__logo {
-  display: inline-block; }
-  @media screen and (min-width: 55.5rem) {
-    .logoAndNavbarContainer__logo {
-      float: left; } }
-
-.header__logoAndNavbarContainer {
-  margin-bottom: 3rem; }
-
-.logoAndNavbarContainer__menuButton {
-  position: absolute;
-  left: 0; }
-
-.mobileNavbar__title {
-  position: absolute;
-  left: -100rem; }
 
 .logoAndNavbarContainer__callToActionButton {
   margin-top: 1.23rem;
@@ -202,9 +191,24 @@
       display: block;
       float: right; } }
 
-@media screen and (min-width: 55.5rem) {
-  .service__content {
-    width: 45%; } }
+.logoAndNavbarContainer__logo {
+  display: inline-block; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__logo {
+      float: left; } }
+
+.logoAndNavbarContainer__menuButton {
+  position: absolute;
+  left: 0; }
+
+.service__content {
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center; }
+  @media screen and (min-width: 55.5rem) {
+    .service__content {
+      text-align: left;
+      width: 44%; } }
 
 @media screen and (min-width: 55.5rem) {
   .serviceList__item:not(:nth-child(2)) .service__content {
@@ -213,6 +217,16 @@
 @media screen and (min-width: 55.5rem) {
   .serviceList__item:nth-child(2) .service__content {
     float: right; } }
+
+.service__serviceDescription {
+  margin: .5rem 0 1.5rem; }
+
+
+.service__title {
+  color: #6F8196;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0; }
 
 .service__image {
   display: block;
@@ -230,13 +244,9 @@
   .serviceList__item:nth-child(2) .service__image {
     float: left; } }
 
-.service__serviceDescription {
-  margin: .5rem 0 1.5rem; }
-
-.service__title {
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0; }
+.mobileNavbar__title {
+  position: absolute;
+  left: -100rem; }
 
 .serviceList__item {
   clear: both;
@@ -248,15 +258,10 @@
   clear: both; }
 
 .services__serviceList {
-  margin-top: 5rem; }
-
-.services__title {
-  position: absolute;
-  left: -100rem; }
+  margin-top: 6rem; }
 
 .services__servicesPara1 {
   margin: 0; }
-
 
 .mobileNavMenu__link {
   display: block;
@@ -266,6 +271,10 @@
   transition: .2s background-color; }
   .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
     background-color: #d3e9fb; }
+
+.services__title {
+  position: absolute;
+  left: -100rem; }
 
 .sidebar__callToActionButton {
   margin: 1rem 0 0 1.6rem; }

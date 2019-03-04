@@ -1,4 +1,7 @@
+@import '../../../sass-modules/colors';
+
 .service__title {
+  color: $light-grey;
   font-size: 1rem;
   font-weight: 400;
 
