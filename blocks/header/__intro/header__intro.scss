@@ -1,8 +1,14 @@
+@import '../../../sass-modules/breakpoints';
+
 .header__intro {
-  display: inline-block;
+  margin-bottom: 2rem;
+  
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
 
-  vertical-align: top;
+    vertical-align: top;
 
-  width: 50%;
-  margin-right: -.4rem;
+    width: 50%;
+    margin-right: -.4rem;
+  }
 }
