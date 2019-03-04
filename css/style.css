@@ -62,6 +62,67 @@ Join Link
 .joinLink {
   color: #6F8196; }
 
+/* =============================
+Country List
+================================ */
+.countryList {
+  text-align: left; }
+
+.countryList__country {
+  margin-right: -.3rem; }
+
+/* =============================
+Country 
+================================ */
+.country {
+  display: inline-block;
+  width: 20%; }
+
+/* =============================
+Country Name
+================================ */
+.countryName {
+  font-weight: 500; }
+
+.country__countryName {
+  margin: 0; }
+
+/* =============================
+Country Location
+================================ */
+.countryLocation {
+  color: #6F8196; }
+
+.country__countryLocation {
+  margin: .9rem 0; }
+
+/* =============================
+Customer Services Title
+================================ */
+.customerServicesTitle {
+  font-weight: 500;
+  color: #2B7AF3; }
+
+.country__customerServicesTitle {
+  margin: 0 0 1rem; }
+
+/* =============================
+Customer Services List
+================================ */
+/* --- item --- */
+.customerServices__item:first-child {
+  margin-bottom: 1rem; }
+
+/* =============================
+Contact Icon
+================================ */
+.contactIcon {
+  width: 1rem;
+  vertical-align: middle; }
+
+.customerServices__contactIcon {
+  margin-right: .1rem; }
+
 /* ===================================== 
 Header 
 ===================================== */

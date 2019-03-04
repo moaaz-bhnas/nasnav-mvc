@@ -64,3 +64,76 @@ Join Link
 .joinLink {
   color: $light-grey;
 }
+
+/* =============================
+Country List
+================================ */
+.countryList {
+  text-align: left;
+}
+
+.countryList__country {
+  margin-right: -.3rem;
+}
+
+/* =============================
+Country 
+================================ */
+.country {
+  display: inline-block;
+  width: 20%;
+}
+
+/* =============================
+Country Name
+================================ */
+.countryName {
+  font-weight: 500;
+}
+
+.country__countryName {
+  margin: 0;
+}
+
+/* =============================
+Country Location
+================================ */
+.countryLocation {
+  color: $light-grey;
+}
+
+.country__countryLocation {
+  margin: .9rem 0;
+}
+
+/* =============================
+Customer Services Title
+================================ */
+.customerServicesTitle {
+  font-weight: 500;
+  color: $brand-color;
+}
+
+.country__customerServicesTitle {
+  margin: 0 0 1rem;
+}
+
+/* =============================
+Customer Services List
+================================ */
+/* --- item --- */
+.customerServices__item:first-child {
+  margin-bottom: 1rem;
+}
+
+/* =============================
+Contact Icon
+================================ */
+.contactIcon {
+  width: 1rem;
+  vertical-align: middle;
+}
+
+.customerServices__contactIcon {
+  margin-right: .1rem;
+}
