@@ -1,0 +1,271 @@
+@import 'modules/breakpoints';
+@import 'modules/colors';
+@import 'modules/font-sizes';
+
+/* ===================================== 
+Header 
+===================================== */
+.header {
+  background-image: 
+    linear-gradient(
+      to top right, 
+      #8249F0, #119DEA
+    );
+
+  overflow: hidden;
+}
+
+/* ===================================== 
+Logo and navigation bar container 
+===================================== */
+.logoAndNavbarContainer {
+  text-align: center;
+
+  height: 5rem;
+
+  position: relative;
+}
+
+.header__logoAndNavbarContainer {
+  margin-bottom: 3rem;
+}
+
+/* ===================================== 
+Menu Button
+===================================== */
+.menuButton {
+  display: inline-block;
+
+  width: 3rem;
+  padding: .7rem;
+  background-color: transparent;
+  border: none;
+  margin-top: .9rem;
+
+  cursor: pointer;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: none;
+  }
+}
+
+.logoAndNavbarContainer__menuButton {
+  position: absolute;
+  left: 0;
+}
+
+/* ===================================== 
+Sidebar
+===================================== */
+.sidebar {
+  text-align: left;
+
+  width: 18.75rem;
+  background-color: #fff;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+
+  transform: translateX(-100%);
+  transition: .3s transform;
+
+  .menuButton[aria-pressed="true"] ~ & {
+    transform: translateX(0);
+  }
+}
+
+/* ===================================== 
+Sidebar Overlay
+===================================== */
+.sidebarOverlay {
+  display: none;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  background-color: rgba($color: #000, $alpha: .5);
+
+  .menuButton[aria-pressed="true"] ~ & {
+    display: block;
+  }
+}
+
+/* ===================================== 
+Mobile Navigation Bar
+===================================== */
+/* --- title --- */
+.mobileNavbar__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* ===================================== 
+Mobile Navigation Menu
+===================================== */
+/* --- link --- */
+.mobileNavMenu__link {
+  display: block;
+
+  text-decoration: none;
+  color: $dark-grey;
+
+  padding: 1rem 0 1rem 3rem;
+
+  transition: .2s background-color;
+
+  &:hover,
+  &:focus {
+    background-color: #d3e9fb;
+  }
+}
+
+/* ===================================== 
+Logo
+===================================== */
+.logo {
+  line-height: 5rem;
+  color: #fff;
+  margin: 0;
+}
+
+.logoAndNavbarContainer__logo {
+  display: inline-block;
+
+  @media screen and (min-width: $break-sidenav) {
+    float: left;
+  }
+}
+
+/* ===================================== 
+Desktop Navigation Bar 
+===================================== */
+.desktopNavbar {
+  display: none;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+  }
+}
+
+/* --- title --- */
+.desktopNavbar__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* ===================================== 
+Desktop Navigation Menu 
+===================================== */
+/* --- item --- */
+.desktopNavMenu__item {
+  display: inline-block;
+}
+
+/* --- link --- */
+.desktopNavMenu__link {
+  display: block;
+
+  line-height: 5rem;
+  color: #fff;
+  text-decoration: none;
+
+  padding: 0 1.2rem;
+
+  position: relative;
+
+  @media screen and (min-width: $break-large) {
+    padding: 0 1.6rem;
+  }
+
+  &::before {
+    content: '';
+  
+    width: 1.4rem;
+    height: .2rem;
+  
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+
+    transition: .2s background-color, .2s box-shadow;
+  }
+
+  &:hover,
+  &:focus {
+    &::before {
+      background-color: #fff;
+      box-shadow: 0 0 10px #fff;
+    }
+  }
+}
+
+/* ===================================== 
+Intro
+===================================== */
+.header__intro {
+  margin-bottom: 2rem;
+  
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 50%;
+    margin-right: -.4rem;
+  }
+}
+
+/* ===================================== 
+Intro first paragraph
+===================================== */
+.introPara1 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 300;
+}
+
+.intro__introPara1 {
+  margin: 0;
+}
+
+/* ===================================== 
+Intro second paragraph
+===================================== */
+.introPara2 {
+  color: #fff;
+}
+
+.intro__introPara2 {
+  margin: 2rem 0;
+}
+
+/* ===================================== 
+Laptop
+===================================== */
+.laptop {
+  transform: perspective(500px) rotate3d(1, -1, 0, 40deg);
+}
+
+.header__laptop {
+  display: block;
+
+  width: 60%;
+  margin: 0 auto;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: inline-block;
+
+    vertical-align: top;
+
+    width: 45%;
+    margin-left: 5%;
+  }
+}
+

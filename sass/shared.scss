@@ -1,0 +1,77 @@
+@import 'modules/colors';
+@import 'modules/breakpoints';
+
+/* ===================================== 
+Container 
+===================================== */
+.container {
+  padding: 0 1.5rem;
+  max-width: 65rem;
+  margin: 0 auto;
+}
+
+/* ===================================== 
+Body Text 
+===================================== */
+.bodyText {
+  line-height: 1.5;
+  color: $light-grey;
+}
+
+/* ===================================== 
+Call-to-action buttons 
+===================================== */
+.callToActionButton {
+  font-weight: 700;
+  color: transparent;
+
+  padding: .8rem 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+
+  cursor: pointer;
+}
+
+.logoAndNavbarContainer__callToActionButton {
+  margin-top: 1.23rem;
+  display: none;
+
+  @media screen and (min-width: $break-sidenav) {
+    display: block;
+    float: right;
+  }
+}
+
+.sidebar__callToActionButton {
+  margin: 1rem 0 0 1.6rem;
+}
+
+// modifiers
+.callToActionButton_color_white {
+  color: $blue;
+  background-color: #fff;
+}
+// .callToActionButton_color_violet {
+//   color: $violet;
+// }
+.callToActionButton_color_blue {
+  color: #fff;
+  background-color: $blue;
+}
+
+/* ===================================== 
+Image 
+===================================== */
+.image {
+  max-width: 100%;
+}
+
+/* ===================================== 
+List 
+===================================== */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}

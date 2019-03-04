@@ -6,72 +6,27 @@
 .body[data-noscroll="true"] {
   overflow: hidden; }
 
-.bodyText {
-  line-height: 1.5;
-  color: #6F8196; }
-
-.callToActionButton {
-  font-weight: 700;
-  color: transparent;
-  padding: .8rem 1.4rem;
-  background-color: #fff;
-  border: none;
-  border-radius: 1.2rem;
-  cursor: pointer; }
-
-.callToActionButton_color_white {
-  color: #119DEA;
-  background-color: #fff; }
-
-.callToActionButton_color_blue {
-  color: #fff;
-  background-color: #119DEA; }
-
-.container {
-  padding: 0 1.5rem;
-  max-width: 65rem;
-  margin: 0 auto; }
-
-.desktopNavbar {
-  display: none; }
-  @media screen and (min-width: 55.5rem) {
-    .desktopNavbar {
-      display: inline-block; } }
-
+/* ===================================== 
+Header 
+===================================== */
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA);
   overflow: hidden; }
 
-.image {
-  max-width: 100%; }
-
-
-.introPara1 {
-  color: #fff;
-  font-size: 2.7rem;
-  font-weight: 300; }
-
-.introPara2 {
-  color: #fff; }
-
-.laptop {
-  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
-
-.list {
-  list-style: none;
-  padding-left: 0;
-  margin: 0; }
-
-.logo {
-  line-height: 5rem;
-  color: #fff;
-  margin: 0; }
-
+/* ===================================== 
+Logo and navigation bar container 
+===================================== */
 .logoAndNavbarContainer {
   text-align: center;
   height: 5rem;
   position: relative; }
 
+.header__logoAndNavbarContainer {
+  margin-bottom: 3rem; }
+
+/* ===================================== 
+Menu Button
+===================================== */
 .menuButton {
   display: inline-block;
   width: 3rem;
@@ -84,35 +39,13 @@
     .menuButton {
       display: none; } }
 
-.serviceDescription {
-  font-size: 2rem; }
-
-
-.services {
-  padding: 4rem 0;
-  position: relative;
-  overflow: hidden; }
-
-.services::before {
-  content: '';
+.logoAndNavbarContainer__menuButton {
   position: absolute;
-  top: 21rem;
-  right: 0;
-  z-index: -1;
-  width: 180%;
-  height: 35rem;
-  background-color: #F0F6F6;
-  transform-origin: 100% 0;
-  transform: rotate(-24deg); }
+  left: 0; }
 
-.servicesPara1 {
-  text-align: center;
-  font-size: 2rem; }
-
-.servicesPara2 {
-  font-size: 1.05rem;
-  text-align: center; }
-
+/* ===================================== 
+Sidebar
+===================================== */
 .sidebar {
   text-align: left;
   width: 18.75rem;
@@ -127,6 +60,9 @@
   .menuButton[aria-pressed="true"] ~ .sidebar {
     transform: translateX(0); }
 
+/* ===================================== 
+Sidebar Overlay
+===================================== */
 .sidebarOverlay {
   display: none;
   position: fixed;
@@ -138,9 +74,63 @@
   .menuButton[aria-pressed="true"] ~ .sidebarOverlay {
     display: block; }
 
+/* ===================================== 
+Mobile Navigation Bar
+===================================== */
+/* --- title --- */
+.mobileNavbar__title {
+  position: absolute;
+  left: -100rem; }
+
+/* ===================================== 
+Mobile Navigation Menu
+===================================== */
+/* --- link --- */
+.mobileNavMenu__link {
+  display: block;
+  text-decoration: none;
+  color: #2E3E4F;
+  padding: 1rem 0 1rem 3rem;
+  transition: .2s background-color; }
+  .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
+    background-color: #d3e9fb; }
+
+/* ===================================== 
+Logo
+===================================== */
+.logo {
+  line-height: 5rem;
+  color: #fff;
+  margin: 0; }
+
+.logoAndNavbarContainer__logo {
+  display: inline-block; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__logo {
+      float: left; } }
+
+/* ===================================== 
+Desktop Navigation Bar 
+===================================== */
+.desktopNavbar {
+  display: none; }
+  @media screen and (min-width: 55.5rem) {
+    .desktopNavbar {
+      display: inline-block; } }
+
+/* --- title --- */
+.desktopNavbar__title {
+  position: absolute;
+  left: -100rem; }
+
+/* ===================================== 
+Desktop Navigation Menu 
+===================================== */
+/* --- item --- */
 .desktopNavMenu__item {
   display: inline-block; }
 
+/* --- link --- */
 .desktopNavMenu__link {
   display: block;
   line-height: 5rem;
@@ -164,8 +154,43 @@
     background-color: #fff;
     box-shadow: 0 0 10px #fff; }
 
-.header__logoAndNavbarContainer {
-  margin-bottom: 3rem; }
+/* ===================================== 
+Intro
+===================================== */
+.header__intro {
+  margin-bottom: 2rem; }
+  @media screen and (min-width: 55.5rem) {
+    .header__intro {
+      display: inline-block;
+      vertical-align: top;
+      width: 50%;
+      margin-right: -.4rem; } }
+
+/* ===================================== 
+Intro first paragraph
+===================================== */
+.introPara1 {
+  color: #fff;
+  font-size: 2.7rem;
+  font-weight: 300; }
+
+.intro__introPara1 {
+  margin: 0; }
+
+/* ===================================== 
+Intro second paragraph
+===================================== */
+.introPara2 {
+  color: #fff; }
+
+.intro__introPara2 {
+  margin: 2rem 0; }
+
+/* ===================================== 
+Laptop
+===================================== */
+.laptop {
+  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
 
 .header__laptop {
   display: block;
@@ -178,56 +203,67 @@
       width: 45%;
       margin-left: 5%; } }
 
-.header__intro {
-  margin-bottom: 2rem; }
-  @media screen and (min-width: 55.5rem) {
-    .header__intro {
-      display: inline-block;
-      vertical-align: top;
-      width: 50%;
-      margin-right: -.4rem; } }
+/* =======================================
+Services
+========================================== */
+.services {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden; }
 
-.desktopNavbar__title {
+.services::before {
+  content: '';
+  position: absolute;
+  top: 21rem;
+  right: 0;
+  z-index: -1;
+  width: 180%;
+  height: 35rem;
+  background-color: #F0F6F6;
+  transform-origin: 100% 0;
+  transform: rotate(-24deg); }
+
+/* --- title --- */
+.services__title {
   position: absolute;
   left: -100rem; }
 
-.intro__introPara1 {
+/* =======================================
+First Paragraph
+========================================== */
+.servicesPara1 {
+  text-align: center;
+  font-size: 2rem; }
+
+.services__servicesPara1 {
   margin: 0; }
 
-.intro__introPara2 {
-  margin: 2rem 0; }
+/* =======================================
+Second Paragraph
+========================================== */
+.servicesPara2 {
+  font-size: 1.05rem;
+  text-align: center; }
 
-.logoAndNavbarContainer__callToActionButton {
-  margin-top: 1.23rem;
-  display: none; }
-  @media screen and (min-width: 55.5rem) {
-    .logoAndNavbarContainer__callToActionButton {
-      display: block;
-      float: right; } }
+/* =======================================
+Service List
+========================================== */
+.services__serviceList {
+  margin-top: 6rem; }
 
-.logoAndNavbarContainer__logo {
-  display: inline-block; }
-  @media screen and (min-width: 55.5rem) {
-    .logoAndNavbarContainer__logo {
-      float: left; } }
+/* --- Item --- */
+.serviceList__item {
+  clear: both;
+  margin-bottom: 8rem; }
+  .serviceList__item::after {
+    content: "";
+    display: block;
+    clear: both; }
 
-.logoAndNavbarContainer__menuButton {
-  position: absolute;
-  left: 0; }
-
-.mobileNavbar__title {
-  position: absolute;
-  left: -100rem; }
-
-.mobileNavMenu__link {
-  display: block;
-  text-decoration: none;
-  color: #2E3E4F;
-  padding: 1rem 0 1rem 3rem;
-  transition: .2s background-color; }
-  .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
-    background-color: #d3e9fb; }
-
+/* =======================================
+Service
+========================================== */
+/* --- content --- */
 .service__content {
   max-width: 30rem;
   margin: 0 auto;
@@ -246,6 +282,14 @@
   .serviceList__item:nth-child(2) .service__content {
     float: right; } }
 
+/* --- title --- */
+.service__title {
+  color: #6F8196;
+  font-size: 1rem;
+  font-weight: 400;
+  margin: 0; }
+
+/* --- Image --- */
 .service__image {
   display: block;
   width: 27rem;
@@ -262,34 +306,71 @@
   .serviceList__item:nth-child(2) .service__image {
     float: left; } }
 
+/* =======================================
+Service Description
+========================================== */
+.serviceDescription {
+  font-size: 2rem; }
+
 .service__serviceDescription {
   margin: .5rem 0 1.5rem; }
 
-.service__title {
-  color: #6F8196;
-  font-size: 1rem;
-  font-weight: 400;
-  margin: 0; }
+/* ===================================== 
+Container 
+===================================== */
+.container {
+  padding: 0 1.5rem;
+  max-width: 65rem;
+  margin: 0 auto; }
 
+/* ===================================== 
+Body Text 
+===================================== */
+.bodyText {
+  line-height: 1.5;
+  color: #6F8196; }
 
-.serviceList__item {
-  clear: both;
-  margin-bottom: 8rem; }
+/* ===================================== 
+Call-to-action buttons 
+===================================== */
+.callToActionButton {
+  font-weight: 700;
+  color: transparent;
+  padding: .8rem 1.4rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 1.2rem;
+  cursor: pointer; }
 
-.serviceList__item::after {
-  content: "";
-  display: block;
-  clear: both; }
-
-.services__serviceList {
-  margin-top: 6rem; }
-
-.services__servicesPara1 {
-  margin: 0; }
-
-.services__title {
-  position: absolute;
-  left: -100rem; }
+.logoAndNavbarContainer__callToActionButton {
+  margin-top: 1.23rem;
+  display: none; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__callToActionButton {
+      display: block;
+      float: right; } }
 
 .sidebar__callToActionButton {
   margin: 1rem 0 0 1.6rem; }
+
+.callToActionButton_color_white {
+  color: #119DEA;
+  background-color: #fff; }
+
+.callToActionButton_color_blue {
+  color: #fff;
+  background-color: #119DEA; }
+
+/* ===================================== 
+Image 
+===================================== */
+.image {
+  max-width: 100%; }
+
+/* ===================================== 
+List 
+===================================== */
+.list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0; }

@@ -1,0 +1,150 @@
+@import 'modules/colors';
+@import 'modules/font-sizes';
+@import 'modules/breakpoints';
+
+/* =======================================
+Services
+========================================== */
+.services {
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden; 
+}
+
+.services::before {
+  content: '';
+  position: absolute;
+  top: 21rem;
+  right: 0;
+  z-index: -1;
+  width: 180%;
+  height: 35rem;
+  background-color: $ribbon;
+
+  transform-origin: 100% 0;
+  transform: rotate(-24deg);
+}
+
+/* --- title --- */
+.services__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* =======================================
+First Paragraph
+========================================== */
+.servicesPara1 {
+  text-align: center;
+  font-size: $body-text-med;
+}
+
+.services__servicesPara1 {
+  margin: 0;
+}
+
+/* =======================================
+Second Paragraph
+========================================== */
+.servicesPara2 {
+  font-size: 1.05rem;
+  text-align: center;
+}
+
+/* =======================================
+Service List
+========================================== */
+.services__serviceList {
+  margin-top: 6rem;
+}
+
+/* --- Item --- */
+.serviceList__item {
+  clear: both;
+  margin-bottom: 8rem;
+
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+/* =======================================
+Service
+========================================== */
+/* --- content --- */
+.service__content {
+  max-width: 30rem;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (min-width: $break-sidenav) {
+    text-align: left;
+    width: 42%;
+  }
+}
+
+.serviceList__item:not(:nth-child(2)) {
+  .service__content {
+    @media screen and (min-width: $break-sidenav) {
+      float: left;
+      margin-left: 3rem;
+    }
+  }
+}
+
+.serviceList__item:nth-child(2) {
+  .service__content {
+    @media screen and (min-width: $break-sidenav) {
+      float: right;
+    }
+  }
+}
+
+/* --- title --- */
+.service__title {
+  color: $light-grey;
+  font-size: 1rem;
+  font-weight: 400;
+
+  margin: 0;
+}
+
+/* --- Image --- */
+.service__image {
+  display: block;
+  width: 27rem;
+
+  margin: 0 auto 1rem;
+
+  @media screen and (min-width: $break-sidenav) {
+    width: 50%;
+  }
+}
+
+.serviceList__item:not(:nth-child(2)) {
+  .service__image {
+    @media screen and (min-width: $break-sidenav) {
+      float: right;
+    }
+  }
+}
+
+.serviceList__item:nth-child(2) {
+  .service__image {
+    @media screen and (min-width: $break-sidenav) {
+      float: left;
+    }
+  }
+}
+
+/* =======================================
+Service Description
+========================================== */
+.serviceDescription {
+  font-size: $body-text-med;
+}
+
+.service__serviceDescription {
+  margin: .5rem 0 1.5rem;
+}
