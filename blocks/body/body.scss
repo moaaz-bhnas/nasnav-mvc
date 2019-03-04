@@ -1,4 +1,7 @@
+@import '../../sass-modules/colors';
+
 .body {
+  color: $body-text;
   font-family: 'Work Sans', sans-serif;
   margin: 0;
 }

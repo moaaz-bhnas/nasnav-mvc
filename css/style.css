@@ -1,4 +1,5 @@
 .body {
+  color: #2E3E4F;
   font-family: 'Work Sans', sans-serif;
   margin: 0; }
 
@@ -43,11 +44,11 @@
 .image {
   max-width: 100%; }
 
+
 .introPara1 {
   color: #fff;
   font-size: 2.7rem;
   font-weight: 300; }
-
 
 .introPara2 {
   color: #fff; }
@@ -82,6 +83,17 @@
     .menuButton {
       display: none; } }
 
+.services {
+  padding: 4rem 0; }
+
+.servicesPara1 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 300; }
+
+.servicesPara2 {
+  text-align: center; }
+
 .sidebar {
   text-align: left;
   width: 18.75rem;
@@ -111,6 +123,9 @@
   position: absolute;
   left: -100rem; }
 
+.desktopNavMenu__item {
+  display: inline-block; }
+
 .desktopNavMenu__link {
   display: block;
   line-height: 5rem;
@@ -131,9 +146,6 @@
     background-color: #fff;
     box-shadow: 0 0 10px #fff; }
 
-.desktopNavMenu__item {
-  display: inline-block; }
-
 .header__intro {
   margin-bottom: 2rem; }
   @media screen and (min-width: 55.5rem) {
@@ -142,9 +154,6 @@
       vertical-align: top;
       width: 50%;
       margin-right: -.4rem; } }
-
-.header__logoAndNavbarContainer {
-  margin-bottom: 3rem; }
 
 .header__laptop {
   display: block;
@@ -157,11 +166,14 @@
       width: 45%;
       margin-left: 5%; } }
 
-.intro__introPara2 {
-  margin: 2rem 0; }
+.header__logoAndNavbarContainer {
+  margin-bottom: 3rem; }
 
 .intro__introPara1 {
   margin: 0; }
+
+.intro__introPara2 {
+  margin: 2rem 0; }
 
 .logoAndNavbarContainer__callToActionButton {
   margin-top: 1.23rem;
@@ -177,6 +189,14 @@
     .logoAndNavbarContainer__logo {
       float: left; } }
 
+.logoAndNavbarContainer__menuButton {
+  position: absolute;
+  left: 0; }
+
+.mobileNavbar__title {
+  position: absolute;
+  left: -100rem; }
+
 .mobileNavMenu__link {
   display: block;
   text-decoration: none;
@@ -186,13 +206,12 @@
   .mobileNavMenu__link:hover, .mobileNavMenu__link:focus {
     background-color: #d3e9fb; }
 
-.sidebar__callToActionButton {
-  margin: 1rem 0 0 1.6rem; }
+.services__servicesPara1 {
+  margin: 0; }
 
-.logoAndNavbarContainer__menuButton {
-  position: absolute;
-  left: 0; }
-
-.mobileNavbar__title {
+.services__title {
   position: absolute;
   left: -100rem; }
+
+.sidebar__callToActionButton {
+  margin: 1rem 0 0 1.6rem; }
