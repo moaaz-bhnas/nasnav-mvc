@@ -20,10 +20,47 @@ Countries
   left: -100rem; }
 
 /* =============================
-Jumbotron
+Jumbotron (section)
 ================================ */
 .countries__jumbotron {
   margin: 0; }
+
+/* =============================
+Body Text
+================================ */
+.countries__bodyText {
+  max-width: 47rem;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* =============================
+Modal
+================================ */
+.modal {
+  display: inline-block;
+  width: 15rem;
+  padding: 1.8rem 1rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5); }
+
+/* =============================
+Jumbotron (Modal)
+================================ */
+.modal__jumbotron {
+  margin: 0; }
+
+/* =============================
+Body Text (Modal)
+================================ */
+.modal__bodyText {
+  margin: 1.5rem 0 1.9rem; }
+
+/* =============================
+Join Link
+================================ */
+.joinLink {
+  color: #6F8196; }
 
 /* ===================================== 
 Header 
@@ -353,6 +390,9 @@ Body Text
 /* =====================================
 Jumbo
 ======================================== */
+.jumbotron_size_small {
+  font-size: 1.5rem; }
+
 .jumbotron_size_med {
   font-size: 2rem; }
 
@@ -365,16 +405,19 @@ Jumbo
 .jumbotron_weight_light {
   font-weight: 300; }
 
+.jumbotron_weight_bold {
+  font-weight: 600; }
+
 /* ===================================== 
 Call-to-action buttons 
 ===================================== */
 .callToActionButton {
   font-weight: 700;
   color: transparent;
-  padding: .8rem 1.4rem;
+  padding: 1rem 1.6rem;
   background-color: #fff;
   border: none;
-  border-radius: 1.2rem;
+  border-radius: 1.4rem;
   cursor: pointer; }
 
 .logoAndNavbarContainer__callToActionButton {

@@ -16,8 +16,51 @@ Countries
 }
 
 /* =============================
-Jumbotron
+Jumbotron (section)
 ================================ */
 .countries__jumbotron {
   margin: 0;
+}
+
+/* =============================
+Body Text
+================================ */
+.countries__bodyText {
+  max-width: 47rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* =============================
+Modal
+================================ */
+.modal {
+  display: inline-block;
+
+  width: 15rem;
+  padding: 1.8rem 1rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  box-shadow: 0 0 10px -1px rgba($color: #000, $alpha: .5);
+}
+
+/* =============================
+Jumbotron (Modal)
+================================ */
+.modal__jumbotron {
+  margin: 0;
+}
+
+/* =============================
+Body Text (Modal)
+================================ */
+.modal__bodyText {
+  margin: 1.5rem 0 1.9rem;
+}
+
+/* =============================
+Join Link
+================================ */
+.joinLink {
+  color: $light-grey;
 }

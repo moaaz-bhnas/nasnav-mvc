@@ -29,6 +29,9 @@ Body Text
 Jumbo
 ======================================== */
 // modifiers
+.jumbotron_size_small {
+  font-size: 1.5rem;
+}
 .jumbotron_size_med {
   font-size: 2rem;
 }
@@ -41,6 +44,9 @@ Jumbo
 .jumbotron_weight_light {
   font-weight: 300;
 }
+.jumbotron_weight_bold {
+  font-weight: 600;
+}
 
 /* ===================================== 
 Call-to-action buttons 
@@ -49,10 +55,10 @@ Call-to-action buttons
   font-weight: 700;
   color: transparent;
 
-  padding: .8rem 1.4rem;
+  padding: 1rem 1.6rem;
   background-color: #fff;
   border: none;
-  border-radius: 1.2rem;
+  border-radius: 1.4rem;
 
   cursor: pointer;
 }
@@ -76,9 +82,6 @@ Call-to-action buttons
   color: $blue;
   background-color: #fff;
 }
-// .callToActionButton_color_violet {
-//   color: $violet;
-// }
 .callToActionButton_color_blue {
   color: #fff;
   background-color: $blue;
