@@ -85,6 +85,9 @@ Mobile Navigation Bar
 /* ===================================== 
 Mobile Navigation Menu
 ===================================== */
+.mobileNavMenu {
+  margin: 0; }
+
 /* --- link --- */
 .mobileNavMenu__link {
   display: block;
@@ -126,6 +129,9 @@ Desktop Navigation Bar
 /* ===================================== 
 Desktop Navigation Menu 
 ===================================== */
+.desktopNavMenu {
+  margin: 0; }
+
 /* --- item --- */
 .desktopNavMenu__item {
   display: inline-block; }
@@ -253,8 +259,9 @@ Service List
 
 /* --- Item --- */
 .serviceList__item {
-  clear: both;
-  margin-bottom: 8rem; }
+  clear: both; }
+  .serviceList__item:not(:last-child) {
+    margin-bottom: 8rem; }
   .serviceList__item::after {
     content: "";
     display: block;
@@ -327,7 +334,12 @@ Container
 Body Text 
 ===================================== */
 .bodyText {
-  line-height: 1.5;
+  line-height: 1.5; }
+
+.bodyText_color_white {
+  color: #fff; }
+
+.bodyText_color_grey {
   color: #6F8196; }
 
 /* ===================================== 
@@ -372,5 +384,42 @@ List
 ===================================== */
 .list {
   list-style: none;
-  padding-left: 0;
-  margin: 0; }
+  padding-left: 0; }
+
+/* ===============================
+Statistics
+================================== */
+.statistics {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: #F5F9F9; }
+
+/* --- title --- */
+.statistics__title {
+  position: absolute;
+  left: -100rem; }
+
+/* ===============================
+First Paragraph
+================================== */
+.statisticsPara1 {
+  font-size: 2rem;
+  max-width: 35rem; }
+
+.statistics__statisticsPara1 {
+  margin: 0 auto; }
+
+/* ===============================
+Second Paragraph
+================================== */
+.statisticsPara2 {
+  max-width: 35rem; }
+
+.statistics__statisticsPara2 {
+  margin: 2rem auto 4rem; }
+
+/* ===============================
+Image
+================================== */
+.statisticsImage {
+  width: 33rem; }

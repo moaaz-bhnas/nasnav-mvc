@@ -1,0 +1,47 @@
+@import 'modules/colors';
+@import 'modules/font-sizes';
+
+/* ===============================
+Statistics
+================================== */
+.statistics {
+  text-align: center;
+  padding: 6rem 0;
+  background-color: $lighter-grey;
+}
+
+/* --- title --- */
+.statistics__title {
+  position: absolute;
+  left: -100rem;
+}
+
+/* ===============================
+First Paragraph
+================================== */
+.statisticsPara1 {
+  font-size: $body-text-med;
+  max-width: 35rem;
+}
+
+.statistics__statisticsPara1 {
+  margin: 0 auto;
+}
+
+/* ===============================
+Second Paragraph
+================================== */
+.statisticsPara2 {
+  max-width: 35rem;
+}
+
+.statistics__statisticsPara2 {
+  margin: 2rem auto 4rem;
+}
+
+/* ===============================
+Image
+================================== */
+.statisticsImage {
+  width: 33rem;
+}

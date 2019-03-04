@@ -15,6 +15,13 @@ Body Text
 ===================================== */
 .bodyText {
   line-height: 1.5;
+}
+
+// modifiers
+.bodyText_color_white {
+  color: #fff;
+}
+.bodyText_color_grey {
   color: $light-grey;
 }
 
@@ -73,5 +80,4 @@ List
 .list {
   list-style: none;
   padding-left: 0;
-  margin: 0;
 }

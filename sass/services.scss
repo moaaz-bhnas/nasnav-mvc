@@ -61,7 +61,10 @@ Service List
 /* --- Item --- */
 .serviceList__item {
   clear: both;
-  margin-bottom: 8rem;
+
+  &:not(:last-child) {
+    margin-bottom: 8rem;
+  }
 
   &::after {
     content: "";
