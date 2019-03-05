@@ -12,7 +12,7 @@ Countries
 .countries {
   text-align: center;
   background-color: #F5F9F9;
-  padding: 2rem 0; }
+  padding: 2rem 0 0; }
 
 /* --- title --- */
 .countries__title {
@@ -66,17 +66,30 @@ Join Link
 Country List
 ================================ */
 .countryList {
-  text-align: left; }
+  text-align: center; }
 
-.countryList__country {
-  margin-right: -.3rem; }
+.countries__countryList {
+  margin-top: 4rem;
+  margin-bottom: 0; }
 
 /* =============================
 Country 
 ================================ */
 .country {
+  font-size: .9rem;
+  text-align: center;
   display: inline-block;
-  width: 20%; }
+  box-sizing: border-box;
+  width: 19.3%;
+  min-width: 200.72px;
+  padding: 0 1.5rem; }
+  @media screen and (min-width: 28.9375em) {
+    .country {
+      text-align: left; } }
+
+.countryList__country {
+  margin-right: -.3rem;
+  margin-bottom: 3rem; }
 
 /* =============================
 Country Name
@@ -121,7 +134,39 @@ Contact Icon
   vertical-align: middle; }
 
 .customerServices__contactIcon {
-  margin-right: .1rem; }
+  margin-right: 0rem; }
+
+/* ===============================
+Footer
+================================== */
+.footer {
+  padding-bottom: 2rem;
+  background-color: #F5F9F9; }
+
+/* ===============================
+Logo
+================================== */
+.logo {
+  vertical-align: middle; }
+
+.footer__logo {
+  margin-right: 1rem !important; }
+
+/* ===============================
+Facebook
+================================== */
+.facebook {
+  width: 2.2rem;
+  vertical-align: middle; }
+
+/* ===============================
+Copyright
+================================== */
+.copyright {
+  color: #6F8196; }
+
+.footer__copyright {
+  float: right; }
 
 /* ===================================== 
 Header 
@@ -263,7 +308,7 @@ Desktop Navigation Menu
   position: relative; }
   @media screen and (min-width: 65rem) {
     .desktopNavMenu__link {
-      padding: 0 1.6rem; } }
+      padding: 0 1.9rem; } }
   .desktopNavMenu__link::before {
     content: '';
     width: 1.4rem;

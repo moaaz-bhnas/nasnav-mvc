@@ -1,0 +1,39 @@
+@import 'modules/colors';
+
+/* ===============================
+Footer
+================================== */
+.footer {
+  padding-bottom: 2rem;
+  background-color: $lighter-grey;
+}
+
+/* ===============================
+Logo
+================================== */
+.logo {
+  vertical-align: middle;
+}
+
+.footer__logo {
+  margin-right: 1rem!important;
+}
+
+/* ===============================
+Facebook
+================================== */
+.facebook {
+  width: 2.2rem;
+  vertical-align: middle;
+}
+
+/* ===============================
+Copyright
+================================== */
+.copyright {
+  color: $light-grey;
+}
+
+.footer__copyright {
+  float: right;
+}
