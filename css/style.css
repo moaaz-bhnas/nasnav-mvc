@@ -154,17 +154,23 @@ Map
 Modal
 ================================ */
 .modal {
-  display: inline-block;
+  display: none;
   width: 15rem;
   padding: 1.6rem 1rem;
   background-color: #fff;
   border-radius: .2rem;
   box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2); }
+  @media screen and (min-width: 43.375rem) {
+    .modal {
+      display: block; } }
 
 .map__modal {
   position: absolute;
   top: 12%;
-  left: -14%; }
+  left: 0; }
+  @media screen and (min-width: 69.875rem) {
+    .map__modal {
+      left: -14%; } }
 
 /* =============================
 Jumbotron (Modal)
@@ -440,7 +446,7 @@ Laptop
 Services
 ========================================== */
 .services {
-  padding: 6.7rem 0;
+  padding: 6.7rem 0 5rem;
   position: relative;
   overflow: hidden; }
 
@@ -649,7 +655,7 @@ Statistics
 ================================== */
 .statistics {
   text-align: center;
-  padding: 6rem 0;
+  padding: 5rem 0;
   background-image: linear-gradient(to bottom, #F5F9F9, #fff);
   position: relative; }
 
