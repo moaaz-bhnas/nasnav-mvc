@@ -7,11 +7,13 @@ Statistics
 .statistics {
   text-align: center;
   padding: 6rem 0;
-  background-color: $lighter-grey;
+  background-image:
+    linear-gradient(
+      to bottom, 
+      $lighter-grey, #fff
+    );
 
   position: relative;
-
-  overflow: hidden;
 }
 
 /* --- title --- */
@@ -43,7 +45,7 @@ Second Paragraph
 Image
 ================================== */
 .statisticsImage {
-  width: 33rem;
+  width: 35rem;
 }
 
 /* ===============================
@@ -51,15 +53,18 @@ Phone
 ================================== */
 .phone {
   display: none;
-  width: 20rem;
+  width: 15rem;
   position: absolute;
   top: 3rem;
-  left: -5rem;
-
-  transform: rotate(-20deg);
+  left: 0;
+  top: -4.3rem;
 
   @media screen and (min-width: $break-large) {
     display: block;
+  }
+
+  @media screen and (min-width: $break-xlarge) {
+    width: 20rem;                   
   }
 }
 
@@ -68,14 +73,16 @@ Tablet
 ================================== */
 .tablet {
   display: none;
-  width: 20rem;
+  width: 15rem;
   position: absolute;
-  top: 3rem;
-  right: -8rem;
-
-  transform: rotate(-20deg);
+  top: 2rem;
+  right: 0;
 
   @media screen and (min-width: $break-large) {
     display: block;
+  }
+
+  @media screen and (min-width: $break-xlarge) {
+    width: 20rem;
   }
 }

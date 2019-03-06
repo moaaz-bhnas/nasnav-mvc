@@ -149,10 +149,11 @@ Logo
   color: #fff;
 
   width: 7rem;
-  margin-top: 1.8rem;
 }
 
 .logoAndNavbarContainer__logo {
+  margin-top: 1.8rem;
+  
   @media screen and (min-width: $break-sidenav) {
     float: left;
   }
@@ -264,7 +265,8 @@ Intro second paragraph
 Laptop
 ===================================== */
 .laptopContainer {
-  width: 60%;
+  width: 100%;
+  max-width: 486px;
   margin: 0 auto;
 
   position: relative;
@@ -272,15 +274,14 @@ Laptop
   @media screen and (min-width: $break-sidenav) {
     display: inline-block;
     width: 50%;
+    max-width: initial;
   }
 }
 
 .header__laptop {
-  max-width: initial!important;
-
-  @media screen and (min-width: $break-sidenav) {
+  @media screen and (min-width: $break-xlarge) {
     width: 115%;
-    max-width: initial;
+    max-width: initial!important;
 
     position: absolute;
     top: -2rem;

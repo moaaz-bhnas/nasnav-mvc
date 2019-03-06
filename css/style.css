@@ -11,7 +11,6 @@ Countries
 ================================ */
 .countries {
   text-align: center;
-  background-color: #F5F9F9;
   padding: 2rem 0 0; }
 
 /* --- title --- */
@@ -23,44 +22,14 @@ Countries
 Jumbotron (section)
 ================================ */
 .countries__jumbotron {
-  margin: 0; }
+  margin: .4rem 0 1rem; }
 
 /* =============================
 Body Text
 ================================ */
 .countries__bodyText {
   max-width: 47rem;
-  margin-left: auto;
-  margin-right: auto; }
-
-/* =============================
-Modal
-================================ */
-.modal {
-  display: inline-block;
-  width: 15rem;
-  padding: 1.8rem 1rem;
-  background-color: #fff;
-  border-radius: .2rem;
-  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.5); }
-
-/* =============================
-Jumbotron (Modal)
-================================ */
-.modal__jumbotron {
-  margin: 0; }
-
-/* =============================
-Body Text (Modal)
-================================ */
-.modal__bodyText {
-  margin: 1.5rem 0 1.9rem; }
-
-/* =============================
-Join Link
-================================ */
-.joinLink {
-  color: #6F8196; }
+  margin: 0 auto; }
 
 /* =============================
 Country List
@@ -136,13 +105,92 @@ Contact Icon
 .customerServices__contactIcon {
   margin-right: 0rem; }
 
+/* =============================
+Map
+================================ */
+.map {
+  max-width: 53rem;
+  position: relative; }
+
+.countries__map {
+  margin: 2rem auto 0; }
+
+/* --- item --- */
+.flagList__item {
+  position: absolute; }
+
+.flagList__item_country_kuwait {
+  top: 35.5%;
+  left: 58%; }
+
+.flagList__item_country_egypt {
+  top: 35.5%;
+  left: 53%; }
+
+.flagList__item_country_london {
+  top: 22%;
+  left: 44.5%; }
+
+.flagList__item_country_nigeria {
+  top: 51%;
+  left: 46%; }
+
+.flagList__item_country_poland {
+  top: 20%;
+  left: 51%; }
+
+/* --- Pointer --- */
+.flagList__pointer {
+  display: block;
+  margin: -.2rem auto 0;
+  width: .55rem;
+  height: .55rem;
+  background-color: #2B7AF3;
+  border: .4rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); }
+
+/* =============================
+Modal
+================================ */
+.modal {
+  display: inline-block;
+  width: 15rem;
+  padding: 1.6rem 1rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  box-shadow: 0 0 10px -1px rgba(0, 0, 0, 0.2); }
+
+.map__modal {
+  position: absolute;
+  top: 12%;
+  left: -14%; }
+
+/* =============================
+Jumbotron (Modal)
+================================ */
+.modal__jumbotron {
+  margin: 0; }
+
+/* =============================
+Body Text (Modal)
+================================ */
+.modal__bodyText {
+  margin: 1.5rem 0 1.9rem; }
+
+/* =============================
+Join Link
+================================ */
+.joinLink {
+  font-size: .9rem;
+  color: #6F8196; }
+
 /* ===============================
 Footer
 ================================== */
 .footer {
   text-align: center;
-  padding-bottom: 2rem;
-  background-color: #F5F9F9; }
+  padding-bottom: 2rem; }
   @media screen and (min-width: 34.375em) {
     .footer {
       text-align: left; } }
@@ -282,12 +330,13 @@ Logo
 ===================================== */
 .logo {
   color: #fff;
-  width: 7rem;
-  margin-top: 1.8rem; }
+  width: 7rem; }
 
-@media screen and (min-width: 55.5rem) {
-  .logoAndNavbarContainer__logo {
-    float: left; } }
+.logoAndNavbarContainer__logo {
+  margin-top: 1.8rem; }
+  @media screen and (min-width: 55.5rem) {
+    .logoAndNavbarContainer__logo {
+      float: left; } }
 
 /* ===================================== 
 Desktop Navigation Bar 
@@ -368,24 +417,24 @@ Intro second paragraph
 Laptop
 ===================================== */
 .laptopContainer {
-  width: 60%;
+  width: 100%;
+  max-width: 486px;
   margin: 0 auto;
   position: relative; }
   @media screen and (min-width: 55.5rem) {
     .laptopContainer {
       display: inline-block;
-      width: 50%; } }
+      width: 50%;
+      max-width: initial; } }
 
-.header__laptop {
-  max-width: initial !important; }
-  @media screen and (min-width: 55.5rem) {
-    .header__laptop {
-      width: 115%;
-      max-width: initial;
-      position: absolute;
-      top: -2rem;
-      left: 0;
-      vertical-align: top; } }
+@media screen and (min-width: 75.125rem) {
+  .header__laptop {
+    width: 115%;
+    max-width: initial !important;
+    position: absolute;
+    top: -2rem;
+    left: 0;
+    vertical-align: top; } }
 
 /* =======================================
 Services
@@ -436,7 +485,7 @@ Service List
 .serviceList__item {
   clear: both; }
   .serviceList__item:not(:last-child) {
-    margin-bottom: 8rem; }
+    margin-bottom: 4rem; }
   .serviceList__item::after {
     content: "";
     display: block;
@@ -453,7 +502,9 @@ Service
   @media screen and (min-width: 55.5rem) {
     .service__content {
       text-align: left;
-      width: 42%; } }
+      width: 40%;
+      position: relative;
+      top: 2.5rem; } }
 
 @media screen and (min-width: 55.5rem) {
   .serviceList__item:not(:nth-child(2)) .service__content {
@@ -478,7 +529,7 @@ Service
   margin: 0 auto 1rem; }
   @media screen and (min-width: 55.5rem) {
     .service__image {
-      width: 50%; } }
+      width: 52%; } }
 
 @media screen and (min-width: 55.5rem) {
   .serviceList__item:not(:nth-child(2)) .service__image {
@@ -552,7 +603,7 @@ Call-to-action buttons
 .callToActionButton {
   font-weight: 700;
   color: transparent;
-  padding: 1rem 1.6rem;
+  padding: .9rem 1.4rem;
   background-color: #fff;
   border: none;
   border-radius: 1.4rem;
@@ -568,6 +619,9 @@ Call-to-action buttons
 
 .sidebar__callToActionButton {
   margin: 1rem 0 0 1.6rem; }
+
+.callToActionButton_size_large {
+  padding: 1.1rem 1.9rem; }
 
 .callToActionButton_color_white {
   color: #119DEA;
@@ -596,9 +650,8 @@ Statistics
 .statistics {
   text-align: center;
   padding: 6rem 0;
-  background-color: #F5F9F9;
-  position: relative;
-  overflow: hidden; }
+  background-image: linear-gradient(to bottom, #F5F9F9, #fff);
+  position: relative; }
 
 /* --- title --- */
 .statistics__title {
@@ -625,32 +678,37 @@ Second Paragraph
 Image
 ================================== */
 .statisticsImage {
-  width: 33rem; }
+  width: 35rem; }
 
 /* ===============================
 Phone
 ================================== */
 .phone {
   display: none;
-  width: 20rem;
+  width: 15rem;
   position: absolute;
   top: 3rem;
-  left: -5rem;
-  transform: rotate(-20deg); }
+  left: 0;
+  top: -4.3rem; }
   @media screen and (min-width: 65rem) {
     .phone {
       display: block; } }
+  @media screen and (min-width: 75.125rem) {
+    .phone {
+      width: 20rem; } }
 
 /* ===============================
 Tablet
 ================================== */
 .tablet {
   display: none;
-  width: 20rem;
+  width: 15rem;
   position: absolute;
-  top: 3rem;
-  right: -8rem;
-  transform: rotate(-20deg); }
+  top: 2rem;
+  right: 0; }
   @media screen and (min-width: 65rem) {
     .tablet {
       display: block; } }
+  @media screen and (min-width: 75.125rem) {
+    .tablet {
+      width: 20rem; } }

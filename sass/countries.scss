@@ -7,7 +7,6 @@ Countries
 ================================ */
 .countries {
   text-align: center;
-  background-color: $lighter-grey;
   padding: 2rem 0 0;
 }
 
@@ -21,7 +20,7 @@ Countries
 Jumbotron (section)
 ================================ */
 .countries__jumbotron {
-  margin: 0;
+  margin: .4rem 0 1rem;
 }
 
 /* =============================
@@ -29,42 +28,7 @@ Body Text
 ================================ */
 .countries__bodyText {
   max-width: 47rem;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* =============================
-Modal
-================================ */
-.modal {
-  display: inline-block;
-
-  width: 15rem;
-  padding: 1.8rem 1rem;
-  background-color: #fff;
-  border-radius: .2rem;
-  box-shadow: 0 0 10px -1px rgba($color: #000, $alpha: .5);
-}
-
-/* =============================
-Jumbotron (Modal)
-================================ */
-.modal__jumbotron {
-  margin: 0;
-}
-
-/* =============================
-Body Text (Modal)
-================================ */
-.modal__bodyText {
-  margin: 1.5rem 0 1.9rem;
-}
-
-/* =============================
-Join Link
-================================ */
-.joinLink {
-  color: $light-grey;
+  margin: 0 auto;
 }
 
 /* =============================
@@ -153,4 +117,96 @@ Contact Icon
 
 .customerServices__contactIcon {
   margin-right: 0rem;
+}
+
+/* =============================
+Map
+================================ */
+.map {
+  max-width: 53rem;
+  position: relative;
+}
+
+.countries__map {
+  margin: 2rem auto 0;
+}
+
+/* --- item --- */
+.flagList__item {
+  position: absolute;
+}
+
+// modifiers
+.flagList__item_country_kuwait {
+  top: 35.5%;
+  left: 58%;
+}
+.flagList__item_country_egypt {
+  top: 35.5%;
+  left: 53%;
+}
+.flagList__item_country_london {
+  top: 22%;
+  left: 44.5%;
+}
+.flagList__item_country_nigeria {
+  top: 51%;
+  left: 46%;
+}
+.flagList__item_country_poland {
+  top: 20%;
+  left: 51%;
+}
+
+/* --- Pointer --- */
+.flagList__pointer {
+  display: block;
+  margin: -.2rem auto 0;
+  width: .55rem;
+  height: .55rem;
+  background-color: #2B7AF3;
+  border: .4rem solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba($color: #000, $alpha: .2)
+}
+
+/* =============================
+Modal
+================================ */
+.modal {
+  display: inline-block;
+
+  width: 15rem;
+  padding: 1.6rem 1rem;
+  background-color: #fff;
+  border-radius: .2rem;
+  box-shadow: 0 0 10px -1px rgba($color: #000, $alpha: .2);
+}
+
+.map__modal {
+  position: absolute;
+  top: 12%;
+  left: -14%;
+}
+
+/* =============================
+Jumbotron (Modal)
+================================ */
+.modal__jumbotron {
+  margin: 0;
+}
+
+/* =============================
+Body Text (Modal)
+================================ */
+.modal__bodyText {
+  margin: 1.5rem 0 1.9rem;
+}
+
+/* =============================
+Join Link
+================================ */
+.joinLink {
+  font-size: .9rem;
+  color: $light-grey;
 }

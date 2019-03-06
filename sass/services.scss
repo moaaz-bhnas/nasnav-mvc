@@ -58,7 +58,7 @@ Service List
   clear: both;
 
   &:not(:last-child) {
-    margin-bottom: 8rem;
+    margin-bottom: 4rem;
   }
 
   &::after {
@@ -78,7 +78,10 @@ Service
   text-align: center;
   @media screen and (min-width: $break-sidenav) {
     text-align: left;
-    width: 42%;
+    width: 40%;
+
+    position: relative;
+    top: 2.5rem;
   }
 }
 
@@ -116,7 +119,7 @@ Service
   margin: 0 auto 1rem;
 
   @media screen and (min-width: $break-sidenav) {
-    width: 50%;
+    width: 52%;
   }
 }
 
