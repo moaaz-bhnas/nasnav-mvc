@@ -10,8 +10,22 @@ Header
       to top right, 
       #8249F0, #119DEA
     );
+  background: url('../image/background.png') no-repeat 50% 50% / cover;
 
-  overflow: hidden;
+  position: relative;
+
+  @media screen and (min-width: $break-sidenav) {
+    padding-bottom: 8rem;
+  }
+}
+
+.curve {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem;
 }
 
 /* ===================================== 
@@ -132,14 +146,13 @@ Mobile Navigation Menu
 Logo
 ===================================== */
 .logo {
-  line-height: 5rem;
   color: #fff;
-  margin: 0;
+
+  width: 7rem;
+  margin-top: 1.8rem;
 }
 
 .logoAndNavbarContainer__logo {
-  display: inline-block;
-
   @media screen and (min-width: $break-sidenav) {
     float: left;
   }
@@ -250,23 +263,30 @@ Intro second paragraph
 /* ===================================== 
 Laptop
 ===================================== */
-.laptop {
-  transform: perspective(500px) rotate3d(1, -1, 0, 40deg);
-}
-
-.header__laptop {
-  display: block;
-
+.laptopContainer {
   width: 60%;
   margin: 0 auto;
 
+  position: relative;
+
   @media screen and (min-width: $break-sidenav) {
     display: inline-block;
+    width: 50%;
+  }
+}
+
+.header__laptop {
+  max-width: initial!important;
+
+  @media screen and (min-width: $break-sidenav) {
+    width: 115%;
+    max-width: initial;
+
+    position: absolute;
+    top: -2rem;
+    left: 0;
 
     vertical-align: top;
-
-    width: 45%;
-    margin-left: 5%;
   }
 }
 

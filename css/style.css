@@ -178,7 +178,19 @@ Header
 ===================================== */
 .header {
   background-image: linear-gradient(to top right, #8249F0, #119DEA);
-  overflow: hidden; }
+  background: url("../image/background.png") no-repeat 50% 50%/cover;
+  position: relative; }
+  @media screen and (min-width: 55.5rem) {
+    .header {
+      padding-bottom: 8rem; } }
+
+.curve {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 5rem; }
 
 /* ===================================== 
 Logo and navigation bar container 
@@ -269,15 +281,13 @@ Mobile Navigation Menu
 Logo
 ===================================== */
 .logo {
-  line-height: 5rem;
   color: #fff;
-  margin: 0; }
+  width: 7rem;
+  margin-top: 1.8rem; }
 
-.logoAndNavbarContainer__logo {
-  display: inline-block; }
-  @media screen and (min-width: 55.5rem) {
-    .logoAndNavbarContainer__logo {
-      float: left; } }
+@media screen and (min-width: 55.5rem) {
+  .logoAndNavbarContainer__logo {
+    float: left; } }
 
 /* ===================================== 
 Desktop Navigation Bar 
@@ -357,19 +367,25 @@ Intro second paragraph
 /* ===================================== 
 Laptop
 ===================================== */
-.laptop {
-  transform: perspective(500px) rotate3d(1, -1, 0, 40deg); }
+.laptopContainer {
+  width: 60%;
+  margin: 0 auto;
+  position: relative; }
+  @media screen and (min-width: 55.5rem) {
+    .laptopContainer {
+      display: inline-block;
+      width: 50%; } }
 
 .header__laptop {
-  display: block;
-  width: 60%;
-  margin: 0 auto; }
+  max-width: initial !important; }
   @media screen and (min-width: 55.5rem) {
     .header__laptop {
-      display: inline-block;
-      vertical-align: top;
-      width: 45%;
-      margin-left: 5%; } }
+      width: 115%;
+      max-width: initial;
+      position: absolute;
+      top: -2rem;
+      left: 0;
+      vertical-align: top; } }
 
 /* =======================================
 Services
@@ -484,7 +500,9 @@ Container
 .container {
   padding: 0 1.5rem;
   max-width: 65rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative;
+  z-index: 1; }
 
 /* ===================================== 
 Body Text 
@@ -499,16 +517,25 @@ Body Text
   color: #6F8196; }
 
 /* =====================================
-Jumbo
+Jumbotron
 ======================================== */
 .jumbotron_size_small {
-  font-size: 1.5rem; }
+  font-size: 1.3rem; }
+  @media screen and (min-width: 36.25rem) {
+    .jumbotron_size_small {
+      font-size: 1.5rem; } }
 
 .jumbotron_size_med {
-  font-size: 2rem; }
+  font-size: 1.5rem; }
+  @media screen and (min-width: 36.25rem) {
+    .jumbotron_size_med {
+      font-size: 2rem; } }
 
 .jumbotron_size_large {
-  font-size: 2.8rem; }
+  font-size: 1.8rem; }
+  @media screen and (min-width: 36.25rem) {
+    .jumbotron_size_large {
+      font-size: 2.8rem; } }
 
 .jumbotron_color_white {
   color: #fff; }

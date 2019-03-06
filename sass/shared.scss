@@ -8,6 +8,9 @@ Container
   padding: 0 1.5rem;
   max-width: 65rem;
   margin: 0 auto;
+
+  position: relative;
+  z-index: 1;
 }
 
 /* ===================================== 
@@ -26,17 +29,29 @@ Body Text
 }
 
 /* =====================================
-Jumbo
+Jumbotron
 ======================================== */
 // modifiers
 .jumbotron_size_small {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 1.5rem;
+  }
 }
 .jumbotron_size_med {
-  font-size: 2rem;
+  font-size: 1.5rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 2rem;
+  }
 }
 .jumbotron_size_large {
-  font-size: 2.8rem;
+  font-size: 1.8rem;
+
+  @media screen and (min-width: $break-jumbotron) {
+    font-size: 2.8rem;
+  }
 }
 .jumbotron_color_white {
   color: #fff;
