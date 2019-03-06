@@ -153,7 +153,7 @@ Logo
 
 .logoAndNavbarContainer__logo {
   margin-top: 1.8rem;
-  
+
   @media screen and (min-width: $break-sidenav) {
     float: left;
   }
@@ -253,11 +253,7 @@ Jumbotron
 /* ===================================== 
 Intro second paragraph
 ===================================== */
-.introPara2 {
-  color: #fff;
-}
-
-.intro__introPara2 {
+.intro__bodyText {
   margin: 2rem 0;
 }
 
