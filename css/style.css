@@ -63,29 +63,23 @@ Country
 /* =============================
 Country Name
 ================================ */
-.countryName {
-  font-weight: 500; }
-
 .country__countryName {
+  font-weight: 500;
   margin: 0; }
 
 /* =============================
 Country Location
 ================================ */
-.countryLocation {
-  color: #6F8196; }
-
 .country__countryLocation {
+  color: #6F8196;
   margin: .9rem 0; }
 
 /* =============================
 Customer Services Title
 ================================ */
-.customerServicesTitle {
-  font-weight: 500;
-  color: #2B7AF3; }
-
 .country__customerServicesTitle {
+  font-weight: 500;
+  color: #2B7AF3;
   margin: 0 0 1rem; }
 
 /* =============================
@@ -98,11 +92,9 @@ Customer Services List
 /* =============================
 Contact Icon
 ================================ */
-.contactIcon {
-  width: 1rem;
-  vertical-align: middle; }
-
 .customerServices__contactIcon {
+  width: 1rem;
+  vertical-align: middle;
   margin-right: 0rem; }
 
 /* =============================
